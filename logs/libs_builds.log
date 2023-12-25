@@ -1,0 +1,28 @@
+Sun Dec 24 12:38:14 IST 2023
+g++ -g -Wall -pthread -c lib/libtuiframes.cpp -o obj/libtuiframes.o -I /home/hermit/Code_Base/cdb/lib/tuiframes/lib 
+In file included from lib/libtuiframes.cpp:1:
+lib/libtuiframes.h:17:2: warning: 'typedef' was ignored in this declaration
+   17 |  typedef struct FrameRatio
+      |  ^~~~~~~
+lib/libtuiframes.h:23:2: warning: 'typedef' was ignored in this declaration
+   23 |  typedef class tuiWindows
+      |  ^~~~~~~
+Sun Dec 24 12:56:48 IST 2023
+g++ -g -Wall -pthread -c lib/libtuiframes.cpp -o obj/libtuiframes.o -I /home/hermit/Code_Base/cdb/lib/tuiframes/lib 
+In file included from lib/libtuiframes.cpp:1:
+lib/libtuiframes.h:17:2: warning: 'typedef' was ignored in this declaration
+   17 |  typedef struct FrameRatio_t
+      |  ^~~~~~~
+lib/libtuiframes.h:23:2: warning: 'typedef' was ignored in this declaration
+   23 |  typedef class tuiWindows
+      |  ^~~~~~~
+Sunday 24 December 2023 02:47:58 PM IST
+g++ -g -Wall -pthread -c lib/libtuiframes.cpp -o obj/libtuiframes.o -I /home/hermit/Code_Base/cdb/lib/tuiframes/lib 
+In file included from lib/libtuiframes.cpp:1:
+lib/libtuiframes.h:17:2: warning: ‘typedef’ was ignored in this declaration
+   17 |  typedef struct FrameRatio_t
+      |  ^~~~~~~
+lib/libtuiframes.h:23:2: warning: ‘typedef’ was ignored in this declaration
+   23 |  typedef class tuiWindows
+      |  ^~~~~~~
+Sunday 24 December 2023 02:49:12 PM IST
