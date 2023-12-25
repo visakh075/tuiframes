@@ -1,6 +1,0 @@
-Sun Dec 24 12:38:14 IST 2023
-Sun Dec 24 12:56:49 IST 2023
-Sunday 24 December 2023 02:47:58 PM IST
-Sunday 24 December 2023 02:49:12 PM IST
----t_src/test.cpp---
-g++ -g -Wall -pthread -o t_bin/test t_src/test.cpp -I /home/hermit/Code_Base/cdb/lib/tuiframes/lib  -lncurses
