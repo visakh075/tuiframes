@@ -29,6 +29,10 @@ namespace tui
 
 		private:
 		void initFrame(void);
+		
+		pthread_t thrdCtrlFrame;
+		pthread_t thrdDrawFrame;
+
 		FrameSize_t getSize(void);
 		void * drawFrame(void * ptr);
 		void * ctrlFrame(void * ptr);

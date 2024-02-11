@@ -1,4 +1,6 @@
 #include "libtuiframes.h"
+#include <pthread.h>
+
 namespace tui
 {
 	tuiWindows::tuiWindows(FrameRatio_t frameRatio_x)
@@ -15,9 +17,14 @@ namespace tui
 	void tuiWindows::initFrame(void)
 	{
 		initscr();
+		pthread_create(&thrdCtrlFrame,NULL,ctrlFrame,NULL);
 	}
 	void * tuiWindows::drawFrame(void * ptr)
 	{
 		
+	}
+	void * tuiWindows::ctrlFrame(void * ptr)
+	{
+
 	}
 };

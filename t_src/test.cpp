@@ -1,5 +1,6 @@
 #include <ncurses.h>
-
+#include "libtuiframes.h"
+bool break_=false;
 int main()
 {	int ch;
 
@@ -9,22 +10,25 @@ int main()
 	noecho();			/* Don't echo() while we do getch */
 
     	printw("Type any character to see it in bold\n");
-	ch = getch();			/* If raw() hadn't been called
-					 * we have to press enter before it
-					 * gets to the program 		*/
-	if(ch == KEY_F(1))		/* Without keypad enabled this will */
-		printw("F1 Key pressed");/*  not get to us either	*/
-					/* Without noecho() some ugly escape
-					 * charachters might have been printed
-					 * on screen			*/
-	else
-	{	printw("The pressed key is ");
-		attron(A_BOLD);
-		printw("%c", ch);
-		attroff(A_BOLD);
+
+	while(!break_)
+	{
+		ch = getch();
+		if(ch == 'q')
+		{
+			printw("F1 Key pressed");
+
+			break_=true;
+		}
+		else
+		{	printw("The pressed key is ");
+			attron(A_BOLD);
+			printw("%c", ch);
+			attroff(A_BOLD);
+		}
+		refresh();			/* Print it on to the real screen */
 	}
-	refresh();			/* Print it on to the real screen */
-    	getch();			/* Wait for user input */
+	
 	endwin();			/* End curses mode		  */
 
 	return 0;
